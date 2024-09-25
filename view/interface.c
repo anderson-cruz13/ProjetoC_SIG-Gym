@@ -1,4 +1,11 @@
 #include <stdio.h>
+char escolha;
+
+char opcao(void) {
+    char ch;
+    scanf(" %c", &ch);
+    return ch;
+}
     
 char telaPrincipal(void){
     printf(" _______________________________ \n");
@@ -13,6 +20,7 @@ char telaPrincipal(void){
     printf("|  6. Informações               |\n");
     printf("|  0. Sair                      |\n");
     printf("|_______________________________|\n\n");
+    escolha = opcao();
 }
 
 char telaCadastro(void){
@@ -26,6 +34,7 @@ char telaCadastro(void){
     printf("|  4. Cadastrar Equipamento        |\n");
     printf("|  0. Menu principal               |\n");
     printf("|__________________________________|\n\n");
+    escolha = opcao();
 }
 
 char telaPesquisar(void){
@@ -39,6 +48,7 @@ char telaPesquisar(void){
     printf("|  4. Pesquisar Equipamento        |\n");
     printf("|  0. Menu principal               |\n");
     printf("|__________________________________|\n\n");
+    escolha = opcao();
 }
 
 char telaAtualizar(void){
@@ -52,6 +62,7 @@ char telaAtualizar(void){
     printf("|  4. Atualizar Equipamento        |\n");
     printf("|  0. Menu principal               |\n");
     printf("|__________________________________|\n\n");
+    escolha = opcao();
 }
 
 char telaDeletar(void){
@@ -65,6 +76,7 @@ char telaDeletar(void){
     printf("|  4. Deletar Equipamento          |\n");
     printf("|  0. Menu principal               |\n");
     printf("|__________________________________|\n\n");
+    escolha = opcao();
 }
 
 char telaRelatorios(void){
@@ -78,6 +90,7 @@ char telaRelatorios(void){
     printf("|  4. Ver todos os Equipamentos    |\n");
     printf("|  0. Menu principal               |\n");
     printf("|__________________________________|\n\n");
+    escolha = opcao();
 }
 
 
@@ -93,6 +106,7 @@ char telaInfo(void){
     printf("|       > github: dianaRodriguess   |\n");
     printf("|  0. Menu principal                |\n");
     printf("|___________________________________|\n\n");
+    escolha = opcao();
 }
 
 void cabecalhos(char titulo[]){

@@ -8,6 +8,7 @@ char telaAtualizar(void);
 char telaDeletar(void);
 char telaRelatorios(void);
 char telaInfo(void);
+char opcao(void);
 
 
 #endif // _INTERFACE_H
