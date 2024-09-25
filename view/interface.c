@@ -1,6 +1,6 @@
 #include <stdio.h>
     
-void telaPrincipal(void){
+char telaPrincipal(void){
     printf(" _______________________________ \n");
     printf("|.....       SIG-GYM       .....|\n");
     printf("|_______________________________|\n");
@@ -15,7 +15,7 @@ void telaPrincipal(void){
     printf("|_______________________________|\n\n");
 }
 
-void telaCadastro(){
+char telaCadastro(void){
     printf(" __________________________________ \n");
     printf("|.....   MÓDULO DE CADASTRO   .....|\n");
     printf("|__________________________________|\n");
@@ -28,7 +28,7 @@ void telaCadastro(){
     printf("|__________________________________|\n\n");
 }
 
-void telaPesquisar(){
+char telaPesquisar(void){
     printf(" __________________________________ \n");
     printf("|.....   MÓDULO DE PESQUISA   .....|\n");
     printf("|__________________________________|\n");
@@ -41,7 +41,7 @@ void telaPesquisar(){
     printf("|__________________________________|\n\n");
 }
 
-void telaAtualizar(){
+char telaAtualizar(void){
     printf(" __________________________________ \n");
     printf("|.....   MÓDULO DE ATUALIZAR  .....|\n");
     printf("|__________________________________|\n");
@@ -54,7 +54,7 @@ void telaAtualizar(){
     printf("|__________________________________|\n\n");
 }
 
-void telaDeletar(){
+char telaDeletar(void){
     printf(" __________________________________ \n");
     printf("|.....   MÓDULO DE DELETAR    .....|\n");
     printf("|__________________________________|\n");
@@ -67,7 +67,7 @@ void telaDeletar(){
     printf("|__________________________________|\n\n");
 }
 
-void telaRelatorios(){
+char telaRelatorios(void){
     printf(" __________________________________ \n");
     printf("|.....  MÓDULO DE RELATÓRIOS  .....|\n");
     printf("|__________________________________|\n");
@@ -81,7 +81,7 @@ void telaRelatorios(){
 }
 
 
-void telaInfo(){
+char telaInfo(void){
     printf(" ___________________________________\n");
     printf("|.....  MÓDULO DE INFORMAÇÕES  .....|\n");
     printf("|___________________________________|\n");
