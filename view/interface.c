@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 char escolha;
 
 char opcao(void) {
@@ -21,6 +22,7 @@ char telaPrincipal(void){
     printf("|  0. Sair                      |\n");
     printf("|_______________________________|\n\n");
     escolha = opcao();
+    return escolha;
 }
 
 char telaCadastro(void){
@@ -35,6 +37,7 @@ char telaCadastro(void){
     printf("|  0. Menu principal               |\n");
     printf("|__________________________________|\n\n");
     escolha = opcao();
+    return escolha;
 }
 
 char telaPesquisar(void){
@@ -49,6 +52,7 @@ char telaPesquisar(void){
     printf("|  0. Menu principal               |\n");
     printf("|__________________________________|\n\n");
     escolha = opcao();
+    return escolha;
 }
 
 char telaAtualizar(void){
@@ -63,6 +67,7 @@ char telaAtualizar(void){
     printf("|  0. Menu principal               |\n");
     printf("|__________________________________|\n\n");
     escolha = opcao();
+    return escolha;
 }
 
 char telaDeletar(void){
@@ -77,6 +82,7 @@ char telaDeletar(void){
     printf("|  0. Menu principal               |\n");
     printf("|__________________________________|\n\n");
     escolha = opcao();
+    return escolha;
 }
 
 char telaRelatorios(void){
@@ -91,6 +97,7 @@ char telaRelatorios(void){
     printf("|  0. Menu principal               |\n");
     printf("|__________________________________|\n\n");
     escolha = opcao();
+    return escolha;
 }
 
 
@@ -107,6 +114,7 @@ char telaInfo(void){
     printf("|  0. Menu principal                |\n");
     printf("|___________________________________|\n\n");
     escolha = opcao();
+    return escolha;
 }
 
 void cabecalhos(char titulo[]){
