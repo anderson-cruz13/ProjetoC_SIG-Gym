@@ -2,6 +2,7 @@
 #include <string.h>
 char escolha;
 
+
 char opcao(void) {
     char ch;
     scanf(" %c", &ch);
@@ -115,6 +116,31 @@ char telaInfo(void){
     printf("|___________________________________|\n\n");
     escolha = opcao();
     return escolha;
+}
+
+void gerenciarTelas(char opcao){
+    switch (opcao){
+    case '1':
+        telaCadastro();
+        break;
+    case '2':
+        telaPesquisar();
+        break;
+    case '3':
+        telaAtualizar();
+        break;
+    case '4':
+        telaDeletar();
+        break;
+    case '5':
+        telaRelatorios();
+        break;
+    case '6':
+        telaInfo();
+        break;
+    default:
+        break;
+    }
 }
 
 void cabecalhos(char titulo[]){

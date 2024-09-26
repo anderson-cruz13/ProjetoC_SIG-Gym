@@ -6,32 +6,6 @@ void limparTela(void){
     system("clear");
 }
 
-void gerenciarTelas(char opcao){
-    switch (opcao){
-    limparTela();
-    case '1':
-        telaCadastro();
-        break;
-    case '2':
-        telaPesquisar();
-        break;
-    case '3':
-        telaAtualizar();
-        break;
-    case '4':
-        telaDeletar();
-        break;
-    case '5':
-        telaRelatorios();
-        break;
-    case '6':
-        telaInfo();
-        break;
-    default:
-        break;
-    }
-}
-
 int main(void){
     char opcao;
 

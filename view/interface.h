@@ -9,6 +9,7 @@ char telaDeletar(void);
 char telaRelatorios(void);
 char telaInfo(void);
 char opcao(void);
+void gerenciarTelas(char opcao);
 
 
 #endif // _INTERFACE_H
