@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include "view/interface.c"
+#include "view/interface.h"
+#include "model/cliente.h"
 
 void limparBuffer(void){
     int buffer;
@@ -8,21 +8,28 @@ void limparBuffer(void){
 }
 
 int main(void){
-    char opcao;
-
-    do {
-        limparTela();
-        opcao = telaPrincipal();
-
-        if(opcao == '0'){
-            printf("Saindo...\n");
-            break;
-        } else if(opcao == '1' || opcao == '2' || opcao == '3' 
-            || opcao == '4' || opcao == '5' || opcao == '6'){
-            gerenciarTelas(opcao);
-        }
-
-    } while(1);
+    telaPrincipal();
+    limparBuffer();
+    telaCadastro();
+    limparBuffer();
+    cadastrarCliente();
+    limparBuffer();
+    telaPesquisar();
+    limparBuffer();
+    pesquisarCliente();
+    limparBuffer();
+    telaAtualizar();
+    limparBuffer();
+    atualizarCliente();
+    limparBuffer();
+    telaDeletar();
+    limparBuffer();
+    deletarCliente();
+    limparBuffer();
+    telaRelatorios();
+    limparBuffer();
+    telaInfo();
+    limparBuffer();
 
     return 0;
 }
