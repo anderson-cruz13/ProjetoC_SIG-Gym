@@ -2,8 +2,9 @@
 #include <stdlib.h>
 #include "view/interface.c"
 
-void limparTela(void){
-    system("clear");
+void limparBuffer(void){
+    int buffer;
+    while((buffer = getchar()) != '\n' && buffer != EOF);
 }
 
 int main(void){
