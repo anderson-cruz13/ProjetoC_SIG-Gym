@@ -1,8 +1,8 @@
 #include <stdio.h>
-#include "entradas.h"
+#include "../view/entradas.h"
 #include "loops.h"
-#include "../model/cliente.h"
-#include "../model/equipamentos.h"
+#include "../clientes/controller.h"
+#include "../equipamentos/controller.h"
 #include "../model/funcionario.h"
 #include "../model/treino.h"
 #include "../view/interface.h"
